@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Control the left side */
+.left {
+  left: 25%;
+  right:25%;
+}
+
+row1{
+  background-color: blue;
+}
+.input-container {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  width: 100%;
+  margin-bottom: 15px;
+  text-align = "center";
+}
+h1 {
+   width: 100%;
+  background-color: blue;
+}
+.icon {
+  padding: 10px;
+  background: dodgerblue;
+  color: white;
+  min-width: 50px;
+  text-align: center;
+}
+
+.input-field {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  text-align = center;
+}
+
+.input-field:focus {
+  border: 2px solid dodgerblue;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color:BlueViolet;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn1 {
+  background-color: darkkhaki;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn2 {
+  background-color: darkblue;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn3 {
+  background-color: crimson;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+    span.psw {
+         float : left;
+         padding-top : 16px;
+       }
+    span.rege {
+        float: right;
+        padding-top: 16px;
+    }
+    /*set styles for span and cancel button on small screens*/
+     
+    @media screen and (max-width: 300px) {
+        span.rege {
+            display: block;
+            float: none;
+        }
+     }
+</style>
+</head>
+<body>
+<div class="split left">
+
+    <div class="row" style="background-color: blue;">
+        <div class="col-sm-4">
+          <img src="epphoto.jpg" style="background-color: #5BC0DE;" width="58">
+        </div>
+        <div class="col-lg-4">
+  	<h2>Sign in</h2>
+  	</div>
+  	<div class="col-sm-4">
+    	<button type="button" class="close btn-lg btn" aria-label="Close">
+  	<span aria-hidden="true">&times;</span>
+	</button>
+  	</div>
+	</div>
+	<br>
+	<br>
+    <div class="input-container">
+    <input class="input-field" type="text" placeholder="mail@example.com" name="email" align= "middle" required>
+    <i class="fa fa-envelope icon"></i>  
+    </div>
+ 
+    <div class="input-container">
+    <input class="input-field" type="password" placeholder="Password" name="psw">
+    <i class="fa fa-lock icon"></i>
+    </div>
+    <div>
+    <button type="submit" class="btn">Sign in</button>  
+    </div>
+    <div>    
+    <span class="psw"><a href="#">Forgot Password?</a></span>
+    <span class="rege"><a href="#">Register</a></span>
+    </div>
+    <br>
+    <h4><center>-------------------------or------------------------</center><h4>
+    <div>
+    <button type="submit" class="btn2">f</button>
+    </div>
+    <br>
+    <div>
+    <button type="submit" class="btn3">g</button>
+    </div>
+    <br>
+    <button type="submit" class="btn1">Epam login</button>
+    </div>
+</body>
+</html>
